@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人主页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Home</a>
+      <ul class="nav-links">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="切换菜单">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Hero 区域 -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>你好，我是 <span class="highlight">张三</span></h1>
+        <p class="subtitle">全栈开发工程师 | 热爱技术与创新</p>
+        <p class="description">专注于构建高质量的Web应用，追求优雅的代码与出色的用户体验。</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">查看项目</a>
+          <a href="#contact" class="btn btn-outline">联系我</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 关于我 -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>我是一名拥有 5 年经验的全栈开发工程师，擅长使用 React、Vue、Node.js 等主流技术栈进行 Web 开发。</p>
+          <p>在工作中我注重代码质量与团队协作，热衷于探索新技术并将其应用于实际项目中。业余时间我喜欢参与开源项目，并撰写技术博客分享经验。</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">年经验</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">完成项目</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">技术文章</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">技能栈</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">⚛️</div>
+          <h3>前端</h3>
+          <p>React, Vue, TypeScript, HTML5, CSS3, Tailwind</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🖥️</div>
+          <h3>后端</h3>
+          <p>Node.js, Python, Java, Express, Spring Boot</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>数据库</h3>
+          <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">☁️</div>
+          <h3>DevOps</h3>
+          <p>Docker, AWS, CI/CD, Nginx, Linux</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目展示 -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">我的项目</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <span class="project-placeholder">电商平台</span>
+          </div>
+          <div class="project-info">
+            <h3>全栈电商平台</h3>
+            <p>基于 React + Node.js 构建的全功能电商平台，支持商品管理、购物车、在线支付。</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <span class="project-placeholder">任务管理</span>
+          </div>
+          <div class="project-info">
+            <h3>协同任务管理工具</h3>
+            <p>支持实时协作的任务管理看板，集成 WebSocket 实现多人实时同步。</p>
+            <div class="project-tags">
+              <span>Vue</span>
+              <span>WebSocket</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <span class="project-placeholder">数据分析</span>
+          </div>
+          <div class="project-info">
+            <h3>实时数据大屏</h3>
+            <p>企业级实时数据可视化大屏，支持多种图表类型和自定义仪表盘。</p>
+            <div class="project-tags">
+              <span>ECharts</span>
+              <span>TypeScript</span>
+              <span>WebSocket</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <div class="contact-content">
+        <p class="contact-intro">欢迎通过以下方式联系我，期待与您的合作！</p>
+        <div class="contact-links">
+          <a href="mailto:example@email.com" class="contact-item">
+            <span class="contact-icon">📧</span>
+            <span>example@email.com</span>
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-item">
+            <span class="contact-icon">🐙</span>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-item">
+            <span class="contact-icon">💼</span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 张三. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
