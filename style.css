@@ -324,6 +324,121 @@ ul { list-style: none; }
   font-weight: 500;
 }
 
+/* ===== Publications ===== */
+.pub-category {
+  margin-bottom: 48px;
+}
+
+.pub-category:last-child {
+  margin-bottom: 0;
+}
+
+.pub-category-title {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #333;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.pub-card {
+  display: flex;
+  gap: 16px;
+  background: #fff;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid transparent;
+}
+
+.pub-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.pub-badge {
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  height: fit-content;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.pub-badge.conference {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.pub-badge.journal {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.pub-badge.patent {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-body h4 {
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.pub-venue {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.pub-level {
+  display: inline-block;
+  padding: 1px 8px;
+  background: #fff3cd;
+  color: #856404;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.pub-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pub-link {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #f0f0ff;
+  color: #667eea;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.pub-link:hover {
+  background: #667eea;
+  color: #fff;
+}
+
 /* ===== Contact ===== */
 .contact-content {
   max-width: 500px;
@@ -421,5 +536,14 @@ ul { list-style: none; }
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pub-card {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pub-badge {
+    align-self: flex-start;
   }
 }
