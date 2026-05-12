@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>个人主页</title>
+  <meta name="description" content="关得健 - NUDT 毕业全栈开发工程师的个人主页">
+  <title>关得健 | 全栈开发工程师</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Ambient gradient orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
   <!-- 导航栏 -->
   <nav class="navbar">
     <div class="container">
-      <a href="#" class="logo">Home</a>
+      <a href="#" class="logo">GD.</a>
       <ul class="nav-links">
         <li><a href="#about">关于</a></li>
         <li><a href="#skills">技能</a></li>
@@ -18,18 +28,24 @@
         <li><a href="#publications">论文专利</a></li>
         <li><a href="#contact">联系</a></li>
       </ul>
-      <button class="menu-toggle" aria-label="切换菜单">&#9776;</button>
+      <button class="menu-toggle" aria-label="切换菜单">☰</button>
     </div>
   </nav>
 
   <!-- Hero 区域 -->
-  <header class="hero">
+  <header class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
     <div class="container">
       <div class="hero-content">
-        <h1>你好，我是 <span class="highlight">关得健</span></h1>
-        <p class="subtitle">NUDT 毕业 | 全栈开发工程师</p>
-        <p class="description">专注于构建高质量的Web应用，追求优雅的代码与出色的用户体验。</p>
-        <div class="hero-buttons">
+        <div class="hero-avatar" data-reveal>
+          <span class="avatar-initials">GD</span>
+        </div>
+        <h1 data-reveal data-reveal-delay="100">你好，我是 <span class="highlight">关得健</span></h1>
+        <p class="subtitle" data-reveal data-reveal-delay="200">
+          <span class="typewriter"></span><span class="cursor">|</span>
+        </p>
+        <p class="description" data-reveal data-reveal-delay="300">专注于构建高质量的Web应用，追求优雅的代码与出色的用户体验。</p>
+        <div class="hero-buttons" data-reveal data-reveal-delay="400">
           <a href="#projects" class="btn btn-primary">查看项目</a>
           <a href="#contact" class="btn btn-outline">联系我</a>
         </div>
@@ -38,7 +54,7 @@
   </header>
 
   <!-- 关于我 -->
-  <section id="about" class="section">
+  <section id="about" class="section" data-reveal>
     <div class="container">
       <h2 class="section-title">关于我</h2>
       <div class="about-content">
@@ -46,15 +62,15 @@
           <p>我毕业于国防科技大学（NUDT），是一名全栈开发工程师，擅长使用 React、Vue、Node.js 等主流技术栈进行 Web 开发。</p>
           <p>在工作中我注重代码质量与团队协作，热衷于探索新技术并将其应用于实际项目中。业余时间我喜欢参与开源项目，并撰写技术博客分享经验。</p>
           <div class="about-stats">
-            <div class="stat">
+            <div class="stat" data-reveal data-reveal-delay="100">
               <span class="stat-number">5+</span>
               <span class="stat-label">年经验</span>
             </div>
-            <div class="stat">
+            <div class="stat" data-reveal data-reveal-delay="200">
               <span class="stat-number">30+</span>
               <span class="stat-label">完成项目</span>
             </div>
-            <div class="stat">
+            <div class="stat" data-reveal data-reveal-delay="300">
               <span class="stat-number">20+</span>
               <span class="stat-label">技术文章</span>
             </div>
@@ -65,41 +81,57 @@
   </section>
 
   <!-- 技能 -->
-  <section id="skills" class="section section-alt">
+  <section id="skills" class="section section-alt" data-reveal>
     <div class="container">
       <h2 class="section-title">技能栈</h2>
       <div class="skills-grid">
-        <div class="skill-card">
+        <div class="skill-card" data-reveal data-reveal-delay="100">
           <div class="skill-icon">⚛️</div>
           <h3>前端</h3>
           <p>React, Vue, TypeScript, HTML5, CSS3, Tailwind</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 0" data-width="90"></div>
+          </div>
+          <span class="skill-percent">90%</span>
         </div>
-        <div class="skill-card">
+        <div class="skill-card" data-reveal data-reveal-delay="200">
           <div class="skill-icon">🖥️</div>
           <h3>后端</h3>
           <p>Node.js, Python, Java, Express, Spring Boot</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 0" data-width="85"></div>
+          </div>
+          <span class="skill-percent">85%</span>
         </div>
-        <div class="skill-card">
+        <div class="skill-card" data-reveal data-reveal-delay="300">
           <div class="skill-icon">🗄️</div>
           <h3>数据库</h3>
           <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 0" data-width="75"></div>
+          </div>
+          <span class="skill-percent">75%</span>
         </div>
-        <div class="skill-card">
+        <div class="skill-card" data-reveal data-reveal-delay="400">
           <div class="skill-icon">☁️</div>
           <h3>DevOps</h3>
           <p>Docker, AWS, CI/CD, Nginx, Linux</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 0" data-width="70"></div>
+          </div>
+          <span class="skill-percent">70%</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 项目展示 -->
-  <section id="projects" class="section">
+  <section id="projects" class="section" data-reveal>
     <div class="container">
       <h2 class="section-title">我的项目</h2>
       <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+        <div class="project-card" data-reveal data-reveal-delay="100">
+          <div class="project-image project-image-1">
             <span class="project-placeholder">电商平台</span>
           </div>
           <div class="project-info">
@@ -112,8 +144,8 @@
             </div>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+        <div class="project-card" data-reveal data-reveal-delay="200">
+          <div class="project-image project-image-2">
             <span class="project-placeholder">任务管理</span>
           </div>
           <div class="project-info">
@@ -126,8 +158,8 @@
             </div>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+        <div class="project-card" data-reveal data-reveal-delay="300">
+          <div class="project-image project-image-3">
             <span class="project-placeholder">数据分析</span>
           </div>
           <div class="project-info">
@@ -145,14 +177,14 @@
   </section>
 
   <!-- 论文专利 -->
-  <section id="publications" class="section section-alt">
+  <section id="publications" class="section section-alt" data-reveal>
     <div class="container">
       <h2 class="section-title">论文与专利</h2>
 
       <div class="pub-category">
         <h3 class="pub-category-title">📄 学术论文</h3>
 
-        <div class="pub-card">
+        <div class="pub-card" data-reveal data-reveal-delay="100">
           <div class="pub-badge conference">AAAI 2023</div>
           <div class="pub-body">
             <h4>Imperceptible Adversarial Attack via Invertible Neural Networks</h4>
@@ -166,7 +198,7 @@
           </div>
         </div>
 
-        <div class="pub-card">
+        <div class="pub-card" data-reveal data-reveal-delay="200">
           <div class="pub-badge journal">Applied Sciences 2022</div>
           <div class="pub-body">
             <h4>Stylized Pairing for Robust Adversarial Defense</h4>
@@ -179,7 +211,7 @@
           </div>
         </div>
 
-        <div class="pub-card">
+        <div class="pub-card" data-reveal data-reveal-delay="300">
           <div class="pub-badge journal">Applied Sciences 2022</div>
           <div class="pub-body">
             <h4>Adversarial Detection Based on Inner-Class Adjusted Cosine Similarity</h4>
@@ -191,7 +223,7 @@
           </div>
         </div>
 
-        <div class="pub-card">
+        <div class="pub-card" data-reveal data-reveal-delay="400">
           <div class="pub-badge conference">ICAICA 2022</div>
           <div class="pub-body">
             <h4>Adversarial Detection based on Local Cosine Similarity</h4>
@@ -204,7 +236,7 @@
       <div class="pub-category">
         <h3 class="pub-category-title">🧾 发明专利</h3>
 
-        <div class="pub-card">
+        <div class="pub-card" data-reveal data-reveal-delay="100">
           <div class="pub-badge patent">发明专利</div>
           <div class="pub-body">
             <h4>一种基于类内调整余弦相似度的对抗样本检测方法和装置</h4>
@@ -213,7 +245,7 @@
           </div>
         </div>
 
-        <div class="pub-card">
+        <div class="pub-card" data-reveal data-reveal-delay="200">
           <div class="pub-badge patent">发明专利</div>
           <div class="pub-body">
             <h4>基于节点匹配的对抗图生成方法、装置和计算机设备</h4>
@@ -226,21 +258,21 @@
   </section>
 
   <!-- 联系 -->
-  <section id="contact" class="section section-alt">
+  <section id="contact" class="section" data-reveal>
     <div class="container">
       <h2 class="section-title">联系我</h2>
       <div class="contact-content">
         <p class="contact-intro">欢迎通过以下方式联系我，期待与您的合作！</p>
         <div class="contact-links">
-          <a href="mailto:466753353@qq.com" class="contact-item">
+          <a href="mailto:466753353@qq.com" class="contact-item" data-reveal data-reveal-delay="100">
             <span class="contact-icon">📧</span>
             <span>466753353@qq.com</span>
           </a>
-          <a href="https://github.com/link0k" target="_blank" class="contact-item">
+          <a href="https://github.com/link0k" target="_blank" class="contact-item" data-reveal data-reveal-delay="200">
             <span class="contact-icon">🐙</span>
             <span>GitHub</span>
           </a>
-          <a href="https://linkedin.com" target="_blank" class="contact-item">
+          <a href="https://linkedin.com" target="_blank" class="contact-item" data-reveal data-reveal-delay="300">
             <span class="contact-icon">💼</span>
             <span>LinkedIn</span>
           </a>
